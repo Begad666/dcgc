@@ -1,6 +1,5 @@
 <svelte:head>
-	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
+	<title>مسابقة التوجيه المهني الرقمية</title>
 </svelte:head>
 
 <section class="prose p-3">

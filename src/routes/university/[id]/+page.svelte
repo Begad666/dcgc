@@ -5,6 +5,10 @@
 	export let data: PageData;
 </script>
 
+<svelte:head>
+	<title>{data.university.name} - التوجيه المهني</title>
+</svelte:head>
+
 <PageSkeleton
 	data={data.university}
 	imageDirectory="universities"
