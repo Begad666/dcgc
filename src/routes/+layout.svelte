@@ -1,53 +1,37 @@
-<script>
-	import Header from "./Header.svelte";
+<script lang="ts">
+	import Header from "$lib/components/Header.svelte";
+	import Sidebar from "$lib/components/Sidebar.svelte";
+	import SidebarOverlay from "$lib/components/SidebarOverlay.svelte";
+	import { enableFooter } from "$lib/config";
 	import "./styles.css";
+
+	let hidden = true;
+	function setHidden(isHidden: boolean) {
+		hidden = isHidden;
+	}
 </script>
 
-<div class="app">
-	<Header />
+<div class="flex flex-col min-h-screen">
+	<Header {setHidden} />
 
-	<main>
-		<slot />
-	</main>
+	<div class="flex flex-1 flex-row w-full mx-0 my-auto">
+		<SidebarOverlay {hidden} {setHidden} />
+		<Sidebar {hidden} {setHidden} />
+		<main class="flex flex-col w-full flex-[5]">
+			<slot />
+		</main>
+	</div>
 
-	<footer>
-		<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
-	</footer>
+	{#if enableFooter}
+		<footer class="footer footer-center p-2 bg-primary text-primary-content">
+			<aside>
+				<p>
+					Contact me <a
+						href="https://github.com/Begad666/begad.dev/discussions"
+						class="link">here</a
+					>
+				</p>
+			</aside>
+		</footer>
+	{/if}
 </div>
-
-<style>
-	.app {
-		display: flex;
-		flex-direction: column;
-		min-height: 100vh;
-	}
-
-	main {
-		flex: 1;
-		display: flex;
-		flex-direction: column;
-		padding: 1rem;
-		width: 100%;
-		max-width: 64rem;
-		margin: 0 auto;
-		box-sizing: border-box;
-	}
-
-	footer {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 12px;
-	}
-
-	footer a {
-		font-weight: bold;
-	}
-
-	@media (min-width: 480px) {
-		footer {
-			padding: 12px 0;
-		}
-	}
-</style>
