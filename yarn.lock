@@ -225,10 +225,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fontsource/fira-mono@npm:^4.5.10":
-  version: 4.5.10
-  resolution: "@fontsource/fira-mono@npm:4.5.10"
-  checksum: 8641de09916db27f9d5f0394030d239d062a9931c57db33cc9f63df26d15730e26f012c7b37686a5a964129a0d41162165cdde9983fecbbea5dc8e1502e70be7
+"@fontsource/alef@npm:^5.0.12":
+  version: 5.0.12
+  resolution: "@fontsource/alef@npm:5.0.12"
+  checksum: ebb9acc6d80c1eaeaa63c27f4726e6690672bd1bc241adbf4604d9832317d4430d5f5b53573b4e572034cd4371177a2dba4664408c8dcd94913f5b37cc89c185
+  languageName: node
+  linkType: hard
+
+"@fontsource/aleo@npm:^5.0.21":
+  version: 5.0.21
+  resolution: "@fontsource/aleo@npm:5.0.21"
+  checksum: 2e591a09b626c74c7f9135a1c1c6df3c1757f0659d226899505b41d8d9ef6ba433776ace32783c365082ad457f98e541ae2c367c39acb4a5c6bd677b44dba9bc
   languageName: node
   linkType: hard
 
@@ -506,6 +513,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@sveltejs/adapter-static@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "@sveltejs/adapter-static@npm:3.0.1"
+  peerDependencies:
+    "@sveltejs/kit": ^2.0.0
+  checksum: 975c8a2cda9ccc07766bee4cee0ad8e3a5067734394e783ed7a54731406ea3319f6bb4fa691340b044eefd3512b3697bf00a0fa76975919d5f3a766505ca123e
+  languageName: node
+  linkType: hard
+
 "@sveltejs/kit@npm:^2.0.0":
   version: 2.5.10
   resolution: "@sveltejs/kit@npm:2.5.10"
@@ -560,6 +576,20 @@ __metadata:
     svelte: ^4.0.0 || ^5.0.0-next.0
     vite: ^5.0.0
   checksum: 08e572f3e141f3eccff93ac2456c3931f2d94f00b93b32d206bdbc76c9f8961905c5cdb69edab8088d838757af7b1437b4dbeef0e9872ab1a75dda3a961b223d
+  languageName: node
+  linkType: hard
+
+"@tailwindcss/typography@npm:^0.5.13":
+  version: 0.5.13
+  resolution: "@tailwindcss/typography@npm:0.5.13"
+  dependencies:
+    lodash.castarray: "npm:^4.4.0"
+    lodash.isplainobject: "npm:^4.0.6"
+    lodash.merge: "npm:^4.6.2"
+    postcss-selector-parser: "npm:6.0.10"
+  peerDependencies:
+    tailwindcss: "*"
+  checksum: 6c01287e7492c001595cd5a39765f313e48e1d2997ea78823919edabd692300d144c42b6e16dee6e077a683e635b9164ff985d5a0f8eeff7824b2d119151899e
   languageName: node
   linkType: hard
 
@@ -1094,6 +1124,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"css-selector-tokenizer@npm:^0.8":
+  version: 0.8.0
+  resolution: "css-selector-tokenizer@npm:0.8.0"
+  dependencies:
+    cssesc: "npm:^3.0.0"
+    fastparse: "npm:^1.1.2"
+  checksum: 86f68cc666d41f9d153351677694002a9d00e2609e6abc66fcfd7f580be3d6ecc0929e46a06c621ab28da5febbb54567db9709b819414edae4a36d9ff9133e16
+  languageName: node
+  linkType: hard
+
 "css-tree@npm:^2.3.1":
   version: 2.3.1
   resolution: "css-tree@npm:2.3.1"
@@ -1113,19 +1153,42 @@ __metadata:
   languageName: node
   linkType: hard
 
+"culori@npm:^3":
+  version: 3.3.0
+  resolution: "culori@npm:3.3.0"
+  checksum: acd330a8f940dc22f36650ba722c9302a4745fee3c8fb40a27ac27228767e2cba4221c2dc414fce652b82cb264d28f65d8b76d505df402ecf94dbb9e440319e1
+  languageName: node
+  linkType: hard
+
+"daisyui@npm:^4.11.1":
+  version: 4.11.1
+  resolution: "daisyui@npm:4.11.1"
+  dependencies:
+    css-selector-tokenizer: "npm:^0.8"
+    culori: "npm:^3"
+    picocolors: "npm:^1"
+    postcss-js: "npm:^4"
+  checksum: 0207e57720e1f508d7c03bd5f2b0aeadcc076c06c9c11c4e3cc6976a3ee2ac7b0cc84e02f28a8360584d52ceecb9a6ff862c80814356fe9568335a1b5af63be7
+  languageName: node
+  linkType: hard
+
 "dcgc@workspace:.":
   version: 0.0.0-use.local
   resolution: "dcgc@workspace:."
   dependencies:
-    "@fontsource/fira-mono": "npm:^4.5.10"
+    "@fontsource/alef": "npm:^5.0.12"
+    "@fontsource/aleo": "npm:^5.0.21"
     "@neoconfetti/svelte": "npm:^1.0.0"
     "@sveltejs/adapter-auto": "npm:^3.0.0"
+    "@sveltejs/adapter-static": "npm:^3.0.1"
     "@sveltejs/kit": "npm:^2.0.0"
     "@sveltejs/vite-plugin-svelte": "npm:^3.0.0"
+    "@tailwindcss/typography": "npm:^0.5.13"
     "@types/eslint": "npm:^8.56.0"
     "@typescript-eslint/eslint-plugin": "npm:^7.0.0"
     "@typescript-eslint/parser": "npm:^7.0.0"
     autoprefixer: "npm:^10.4.19"
+    daisyui: "npm:^4.11.1"
     eslint: "npm:^8.56.0"
     eslint-config-prettier: "npm:^9.1.0"
     eslint-plugin-svelte: "npm:^2.35.1"
@@ -1582,6 +1645,13 @@ __metadata:
   version: 2.0.6
   resolution: "fast-levenshtein@npm:2.0.6"
   checksum: 111972b37338bcb88f7d9e2c5907862c280ebf4234433b95bc611e518d192ccb2d38119c4ac86e26b668d75f7f3894f4ff5c4982899afced7ca78633b08287c4
+  languageName: node
+  linkType: hard
+
+"fastparse@npm:^1.1.2":
+  version: 1.1.2
+  resolution: "fastparse@npm:1.1.2"
+  checksum: c08d6e7ef10c0928426c1963dd4593e2baaf44d223ab1e5ba5d7b30470144b3a4ecb3605958b73754cea3f857ecef00b67c885f07ca2c312b38b67d9d88b84b5
   languageName: node
   linkType: hard
 
@@ -2139,6 +2209,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"lodash.castarray@npm:^4.4.0":
+  version: 4.4.0
+  resolution: "lodash.castarray@npm:4.4.0"
+  checksum: 0bf523ad1596a5bf17869ba047235b4453eee927005013ae152345e2b291b81a02e7f2b7c38f876a1d16f73c34aa3c3241e965193e5b31595035bc8f330c4358
+  languageName: node
+  linkType: hard
+
+"lodash.isplainobject@npm:^4.0.6":
+  version: 4.0.6
+  resolution: "lodash.isplainobject@npm:4.0.6"
+  checksum: afd70b5c450d1e09f32a737bed06ff85b873ecd3d3d3400458725283e3f2e0bb6bf48e67dbe7a309eb371a822b16a26cca4a63c8c52db3fc7dc9d5f9dd324cbb
+  languageName: node
+  linkType: hard
+
 "lodash.merge@npm:^4.6.2":
   version: 4.6.2
   resolution: "lodash.merge@npm:4.6.2"
@@ -2578,7 +2662,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"picocolors@npm:^1.0.0, picocolors@npm:^1.0.1":
+"picocolors@npm:^1, picocolors@npm:^1.0.0, picocolors@npm:^1.0.1":
   version: 1.0.1
   resolution: "picocolors@npm:1.0.1"
   checksum: c63cdad2bf812ef0d66c8db29583802355d4ca67b9285d846f390cc15c2f6ccb94e8cb7eb6a6e97fc5990a6d3ad4ae42d86c84d3146e667c739a4234ed50d400
@@ -2619,7 +2703,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-js@npm:^4.0.1":
+"postcss-js@npm:^4, postcss-js@npm:^4.0.1":
   version: 4.0.1
   resolution: "postcss-js@npm:4.0.1"
   dependencies:
@@ -2692,6 +2776,16 @@ __metadata:
   peerDependencies:
     postcss: ^8.4.29
   checksum: f917ecfd4b9113a6648e966a41f027ff7e14238393914978d44596e227a50f084667dc8818742348dc7d8b20130b30d4259aca1d4db86754a9c141202ae03714
+  languageName: node
+  linkType: hard
+
+"postcss-selector-parser@npm:6.0.10":
+  version: 6.0.10
+  resolution: "postcss-selector-parser@npm:6.0.10"
+  dependencies:
+    cssesc: "npm:^3.0.0"
+    util-deprecate: "npm:^1.0.2"
+  checksum: a0b27c5e3f7604c8dc7cd83f145fdd7b21448e0d86072da99e0d78e536ba27aa9db2d42024c50aa530408ee517c4bdc0260529e1afb56608f9a82e839c207e82
   languageName: node
   linkType: hard
 
