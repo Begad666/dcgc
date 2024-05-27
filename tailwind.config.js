@@ -19,8 +19,6 @@ export default {
 
 	plugins: [require("@tailwindcss/typography"), require("daisyui")],
 
-	darkMode: "class",
-
 	theme: {
 		extends: {
 			fontFamily: {
@@ -71,21 +69,8 @@ export default {
 					error: red[700],
 
 					...options
-				},
-				// Who needs dark mode, anyway? :)
-				dark: {
-					primary: brandPrimary[500],
-					secondary: brandSecondary[500],
-					accent: brandAccent[600],
-					neutral: brandPrimary[500],
-					"base-100": brandPrimary[900],
-					info: sky[300],
-					success: emerald[300],
-					warning: amber[300],
-					error: red[300],
-
-					...options
 				}
+				// Who needs dark mode, anyway? :)
 			}
 		],
 		rtl: false
