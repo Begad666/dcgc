@@ -1,5 +1,5 @@
 import { red, amber, emerald, sky, zinc } from "tailwindcss/colors";
-import { brandPrimary, brandSecondary, brandAccent } from "./colors";
+import { brandPrimary, brandSecondary, brandAccent, brandPrimarySource } from "./colors";
 const options = {
 	"--rounded-box": "0.5rem", // border radius rounded-box utility class, used in card and other large boxes
 	"--rounded-btn": "0.5rem", // border radius rounded-btn utility class, used in buttons and similar element
@@ -20,9 +20,9 @@ export default {
 	plugins: [require("@tailwindcss/typography"), require("daisyui")],
 
 	theme: {
-		extends: {
+		extend: {
 			fontFamily: {
-				sans: ["Alef", "sans-serif"],
+				sans: ["Cairo", "sans-serif"],
 				serif: ["Aleo", "serif"]
 			},
 			colors: {
@@ -30,7 +30,7 @@ export default {
 				brandSecondary,
 				brandAccent,
 				primary: {
-					brandPrimary
+					...brandPrimary
 				},
 				info: {
 					...sky,
@@ -58,11 +58,12 @@ export default {
 				light: {
 					primary: brandPrimary[500],
 					secondary: brandSecondary[500],
-					accent: brandPrimary[600],
+					accent: brandAccent[500],
 					neutral: brandPrimary[300],
-					"base-100": zinc[50],
-					"base-200": zinc[100],
-					"base-300": zinc[200],
+					"base-100": brandPrimary[50],
+					"base-200": brandPrimary[100],
+					"base-300": brandPrimary[200],
+					"base-content": brandPrimarySource,
 					info: sky[700],
 					success: emerald[700],
 					warning: amber[700],

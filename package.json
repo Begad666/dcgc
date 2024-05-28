@@ -11,8 +11,8 @@
 		"format": "prettier --write ."
 	},
 	"devDependencies": {
-		"@fontsource/alef": "^5.0.12",
 		"@fontsource/aleo": "^5.0.21",
+		"@fontsource/cairo": "^5.0.20",
 		"@neoconfetti/svelte": "^1.0.0",
 		"@sveltejs/adapter-auto": "^3.0.0",
 		"@sveltejs/adapter-static": "^3.0.1",

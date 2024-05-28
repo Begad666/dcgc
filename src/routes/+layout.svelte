@@ -2,7 +2,7 @@
 	import Header from "$lib/components/Header.svelte";
 	import Sidebar from "$lib/components/Sidebar.svelte";
 	import SidebarOverlay from "$lib/components/SidebarOverlay.svelte";
-	import { enableFooter } from "$lib/config";
+	import Footer from "$lib/components/Footer.svelte";
 	import { browser } from "$app/environment";
 	import "./styles.css";
 
@@ -33,12 +33,5 @@
 		</main>
 	</div>
 
-	{#if enableFooter}
-		<footer class="footer footer-center p-2 bg-primary text-primary-content">
-			<nav class="grid grid-flow-col gap-4">
-				<a class="link link-hover" href="https://begad.dev/contact">Contact</a>
-				<!-- <a class="link link-hover" href="/disclaimer">Disclaimer</a> -->
-			</nav>
-		</footer>
-	{/if}
+	<Footer />
 </div>

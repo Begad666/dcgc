@@ -225,17 +225,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fontsource/alef@npm:^5.0.12":
-  version: 5.0.12
-  resolution: "@fontsource/alef@npm:5.0.12"
-  checksum: ebb9acc6d80c1eaeaa63c27f4726e6690672bd1bc241adbf4604d9832317d4430d5f5b53573b4e572034cd4371177a2dba4664408c8dcd94913f5b37cc89c185
-  languageName: node
-  linkType: hard
-
 "@fontsource/aleo@npm:^5.0.21":
   version: 5.0.21
   resolution: "@fontsource/aleo@npm:5.0.21"
   checksum: 2e591a09b626c74c7f9135a1c1c6df3c1757f0659d226899505b41d8d9ef6ba433776ace32783c365082ad457f98e541ae2c367c39acb4a5c6bd677b44dba9bc
+  languageName: node
+  linkType: hard
+
+"@fontsource/cairo@npm:^5.0.20":
+  version: 5.0.20
+  resolution: "@fontsource/cairo@npm:5.0.20"
+  checksum: b1cb34440c2c90ece175b3ba9f8937f4c8c4f87ba7017253446c4e360b369575836bf35549147535a51b606640dc7db72a53799d132a46eb4432cac905eb0f65
   languageName: node
   linkType: hard
 
@@ -1176,8 +1176,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "dcgc@workspace:."
   dependencies:
-    "@fontsource/alef": "npm:^5.0.12"
     "@fontsource/aleo": "npm:^5.0.21"
+    "@fontsource/cairo": "npm:^5.0.20"
     "@neoconfetti/svelte": "npm:^1.0.0"
     "@sveltejs/adapter-auto": "npm:^3.0.0"
     "@sveltejs/adapter-static": "npm:^3.0.1"

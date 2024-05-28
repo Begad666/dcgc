@@ -1,11 +1,12 @@
 <script lang="ts">
 	import { page } from "$app/stores";
 	import logo from "../images/logo.png";
+	import moeLogo from "../images/moe-logo.svg";
 
 	export let setHidden = (isHidden: boolean) => {};
 </script>
 
-<header class="navbar bg-base-200 text-base-content">
+<header class="navbar text-base-content">
 	<div class="flex-none sm:hidden">
 		<button class="btn btn-square btn-ghost" on:click={() => setHidden(false)}>
 			<svg
@@ -26,10 +27,12 @@
 		<a
 			class="btn btn-ghost text-l sm:text-xl"
 			href="/"
-			aria-current={$page.url.pathname === "/"}>مسابقة التوجيه المهني الرقمية</a
+			aria-current={$page.url.pathname === "/"}>التوجيه المهني</a
 		>
 	</div>
 	<div class="flex-none">
-		<img src={logo} alt="شعار مسارك" class="w-24" height="114" width="128" />
+		<img src={moeLogo} alt="شعار وزارة التعليم" class="w-24" />
+		<div class="w-[1px] bg-black h-12 m-2"></div>
+		<img src={logo} alt="شعار مسارك" class="w-20" height="114" width="128" />
 	</div>
 </header>
