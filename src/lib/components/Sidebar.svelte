@@ -12,7 +12,7 @@
 </script>
 
 <div
-	class="z-20 will-change-transform transition-transform sm:transition-none sm:transform-none h-screen top-0 fixed sm:h-auto sm:relative sm:flex-[2] sm:flex min-w-48 max-w-80 bg-base-300 sm:bg-transparent overflow-y-auto"
+	class="z-20 will-change-transform transition-transform sm:transition-none sm:transform-none h-dvh top-0 fixed sm:h-auto sm:relative sm:flex-[2] sm:flex min-w-48 max-w-80 bg-base-300 sm:bg-transparent overflow-y-auto"
 	class:translate-x-full={hidden}
 >
 	<div class="menu w-64 sm:w-full flex flex-col p-4">
