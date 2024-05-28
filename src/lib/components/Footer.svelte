@@ -2,7 +2,7 @@
 	import vision from "$lib/images/vision.svg";
 </script>
 
-<footer class="footer p-2 bg-primary text-base-100 glass">
+<footer class="footer p-2 bg-primary text-base-100 glass mt-8">
 	<aside class="items-center grid-flow-col justify-between w-full">
 		<img src={vision} alt="شعار رؤية 2030" class="w-24" />
 		<div class="text-center">
