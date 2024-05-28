@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { page } from "$app/stores";
+	import logo from "../images/logo.png";
 
 	export let setHidden = (isHidden: boolean) => {};
 </script>
@@ -22,9 +23,13 @@
 		</button>
 	</div>
 	<div class="flex-1">
-		<a class="btn btn-ghost text-l" href="/" aria-current={$page.url.pathname === "/"}
-			>مسابقة التوجيه المهني الرقمية</a
+		<a
+			class="btn btn-ghost text-l sm:text-xl"
+			href="/"
+			aria-current={$page.url.pathname === "/"}>مسابقة التوجيه المهني الرقمية</a
 		>
 	</div>
-	<div class="flex-none"></div>
+	<div class="flex-none">
+		<img src={logo} alt="شعار مسارك" class="w-24" height="114" width="128" />
+	</div>
 </header>

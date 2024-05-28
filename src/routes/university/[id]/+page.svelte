@@ -9,9 +9,4 @@
 	<title>{data.university.name} - التوجيه المهني</title>
 </svelte:head>
 
-<PageSkeleton
-	data={data.university}
-	imageDirectory="universities"
-	altText="جامعة"
-	linkText="جامعة"
-/>
+<PageSkeleton data={data.university} imageDir="universities" text="جامعة" />

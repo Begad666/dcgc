@@ -1,4 +1,4 @@
-import { red, amber, emerald, sky } from "tailwindcss/colors";
+import { red, amber, emerald, sky, zinc } from "tailwindcss/colors";
 import { brandPrimary, brandSecondary, brandAccent } from "./colors";
 const options = {
 	"--rounded-box": "0.5rem", // border radius rounded-box utility class, used in card and other large boxes
@@ -58,11 +58,11 @@ export default {
 				light: {
 					primary: brandPrimary[500],
 					secondary: brandSecondary[500],
-					accent: brandAccent[600],
-					neutral: brandAccent[300],
-					"base-100": brandAccent[50],
-					"base-200": brandAccent[100],
-					"base-300": brandAccent[200],
+					accent: brandPrimary[600],
+					neutral: brandPrimary[300],
+					"base-100": zinc[50],
+					"base-200": zinc[100],
+					"base-300": zinc[200],
 					info: sky[700],
 					success: emerald[700],
 					warning: amber[700],

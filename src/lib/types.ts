@@ -7,4 +7,9 @@ export interface Model {
 		height: number;
 		width: number;
 	};
+	override?: {
+		text?: string;
+		imagePadding?: boolean;
+		darkerImageBackground?: boolean;
+	};
 }
